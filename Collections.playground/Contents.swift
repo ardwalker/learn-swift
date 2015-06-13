@@ -32,6 +32,26 @@ for (index, value) in enumerate(shoppingList) {
     println("Item \(index + 1): \(value)")
 }
 
+
+shoppingList.append("Fish")
+shoppingList.endIndex
+shoppingList.extend(["Bacon", "Coffee"])
+
+
+var filteredList = shoppingList.filter() { $0.rangeOfString("c", options: NSStringCompareOptions.CaseInsensitiveSearch) != nil }
+filteredList
+
+
+shoppingList.first
+shoppingList.insert("Sausage", atIndex: 2)
+
+//var s = shoppingList.join(["Milk", "Kitchen Roll"])
+
+shoppingList.splice(["Pain au chocolat"],atIndex: 0)
+shoppingList.last
+shoppingList.reverse()
+
+
 // ===============================
 // MAP
 // ===============================
