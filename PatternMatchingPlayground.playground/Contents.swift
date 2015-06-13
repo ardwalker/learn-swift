@@ -59,15 +59,25 @@ func tuneUp(car: Car) {
     }
 }
 
-
-
-
-
-
-
-
-
 // =======================================================
+
+
+let color = (0.0, 1.0, 0.8, 1.0)
+
+switch color {
+case (0.0, 0.5...1, let blue, _):
+    println("Green and \(blue * 100)% blue")
+case let (r,g,b, 1.0) where r == g && g == b:
+    println("Opaque grey \(r * 100)%")
+default:
+    println("Whatever")
+}
+
+
+
+
+
+
 
 
 
